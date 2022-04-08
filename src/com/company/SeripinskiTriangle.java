@@ -47,6 +47,7 @@ public class SeripinskiTriangle extends JPanel
     }
     public void drawAndSplit(Graphics g, int [] x, int [] y, int times)
     {
+
         if(times==levels) {
             g.fillPolygon(x, y, 3);
         }

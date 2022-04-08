@@ -10,8 +10,8 @@ public class BoxFractal extends JPanel
     private int levels;
     public BoxFractal(int lev) {
         levels = lev;
-
     }
+
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g); // Call JPanel&#39;s paintComponent method to paint the background
@@ -40,11 +40,9 @@ public class BoxFractal extends JPanel
             drawAndSplit(g,x+wid,y+hei,wid,hei, times+1);
             drawAndSplit(g,x+2*wid,y+2*hei,wid,hei, times+1);
             drawAndSplit(g,x,y+2*hei,wid,hei, times+1);
-
-
         }
-/****** OOPS! I lost the code ******/
     }
+
     public static void main(String[] args)
     {
         JFrame window = new JFrame("Fractals");
