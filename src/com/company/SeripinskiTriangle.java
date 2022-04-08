@@ -26,7 +26,7 @@ public class SeripinskiTriangle extends JPanel
         int [] m = new int [3];
         m[0] = (x[0] + x[1])/2;
         m[1] = (x[1] + x[2])/2;
-        m[2] = (x[2] + x[3])/2;
+        m[2] = (x[2] + x[0])/2;
         return m;
     }
     public void drawAndSplit(Graphics g, int [] x, int [] y, int times)
@@ -46,7 +46,7 @@ public class SeripinskiTriangle extends JPanel
         window.setBounds(200, 200, 500, 500);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        SeripinskiTriangle panel = new SeripinskiTriangle(2);
+        SeripinskiTriangle panel = new SeripinskiTriangle(4);
         panel.setBackground(Color.WHITE);
         Container c = window.getContentPane();
         c.add(panel);
