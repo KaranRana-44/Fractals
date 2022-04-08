@@ -17,8 +17,6 @@ public class BoxFractal extends JPanel
         super.paintComponent(g); // Call JPanel&#39;s paintComponent method to paint the background
         int xCenter = getWidth() / 2;
         int yCenter = getHeight() / 2;
-//        int [] xcoord = {xCenter - 243, xCenter-243, xCenter + 243, xCenter + 243};
-//        int [] ycoord = {yCenter-243, yCenter + 243, yCenter + 243, yCenter - 243};
         g.setColor(Color.RED);
 
         int x = xCenter - 243;
@@ -33,7 +31,6 @@ public class BoxFractal extends JPanel
     {
         if(times==levels) {
             g.fillRect(x,y,w,h);
-
         }
         else {
             int wid=w/3;
